@@ -167,11 +167,6 @@ export default function DataTable() {
                 <TableHead>Break in Studies</TableHead>
                 <TableHead>Pending Backlog</TableHead>
                 <TableHead>Attended Interviews</TableHead>
-                <TableHead>Declaration</TableHead>
-                <TableHead>Civil/Criminal Case</TableHead>
-                <TableHead>Disciplinary Case</TableHead>
-                <TableHead>Terms Accepted</TableHead>
-
               </TableRow>
             </TableHeader>
             <TableBody>
@@ -199,10 +194,6 @@ export default function DataTable() {
                   <TableCell>{item.breakInStudies}</TableCell>
                   <TableCell>{item.pendingBacklog}</TableCell>
                   <TableCell>{item.attendedInterviews}</TableCell>
-                  <TableCell>{item.declaration ? 'Yes' : 'No'}</TableCell>
-                  <TableCell>{item.civilCriminalCase}</TableCell>
-                  <TableCell>{item.disciplinaryCase}</TableCell>
-                  <TableCell>{item.termsAccepted ? 'Yes' : 'No'}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
