@@ -4,7 +4,7 @@ import type { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
   const authToken = request.cookies.get("authToken")?.value;
 
-  // If there's no auth token and the user is trying to access /admin
+  // If there's no auth token and the user is trying to access /admin access
   if (!authToken && request.nextUrl.pathname.startsWith("/admin")) {
     // Don't redirect if they're already on the login page
     if (request.nextUrl.pathname !== "/admin/login") {
